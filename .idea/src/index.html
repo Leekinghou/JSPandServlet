@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Title</title>
+</head>
+<body>
+    <div>Document</div>
+    <!--<段落>-->
+    <p></p>
+
+    <!--<标题>-->
+    <h1></h1>
+    <h2></h2>
+
+    <!--<换行>-->
+    </br>
+
+    <!--<html>-->
+    <hr></hr>
+    <h2>属性</h2>
+    align = ""表示换行</br>
+    可选：</br>
+    right-left-center-justify(两端对齐)</br>
+    <h3 align = "right">试试看-1</h3>
+    <h3 align = "left">试试看-2</h3>
+    <h3 align="center">试试看-3</h3>
+    <hr></hr>
+    <h2>预格式标签</h2>
+    表示：编辑时是什么格式，在浏览器中显示也是什么格式
+    <pre>
+        空两格打了这段文字
+    在   浏览器中      同样是
+        这样显示
+    </pre>
+<hr></hr>
+    <h2>字体格式</h2>
+    <p align="justify">首先欢迎您的加入 <font color = #faebd7 size = "7" face="隶书">今后多多指教</font> </p>
+
+    <hr></hr>
+
+    <!--<=========================>-->
+    <h2>加粗</h2>
+    请你<b>努力</b>工作
+
+    <!--<=========================>-->
+    <h2>倾斜</h2>
+    请你<i>认真</i>工作 </br>
+    请你<em>认真</em>工作
+    <!--<=========================>-->
+    <h2>上标或者下标，不限于数字</h2>
+    请你<sup>努力</sup>工作</br>
+    请你<sub>努力</sub>工作
+    <hr></hr>
+    <!--<=========================>-->
+    <h2>特殊字符-转义</h2>
+    <hr></hr>
+    <h2>图片</h2>
+    这是一个歌手<img src="picture/01.jpg " align="top" width="200px"/>他有很多作品</br>
+
+    这是一个歌手<img src="picture/02.jpg " align="middle" width="300px"/>他也有很多作品</br>
+
+    这是两个歌手<img src="picture/03.jpg " align="bottom" height=" 100px"/>他们也有很多作品 100像素约1cm</br>
+
+    <h3>设置百分比更好</h3>
+
+    <div>因为可以根据用户的屏幕大小变化</div>
+    这是一个歌手<img src="picture/01.jpg " align="top" width="20%"/>他有很多作品</br>
+    <hr></hr>
+    <!--<=========================>-->
+    <h2>alt属性</h2>
+    <div>图片显示不出来，替换方案，类似于try-catch</div>
+    <div>显示不出来的原因</div>
+    1. 网速太慢</br>
+    2. src属性中的错误</br>
+    3. 浏览器禁用图像</br>
+    4. 用户使用的是屏幕阅读器</br>
+    这是一个歌手<img src="picture/00 1.jpg " align="top" width="20%" alt = "抱歉图片无法显示"/>他有很多作品</br>
+    <hr></hr>
+    <h2>文件路径</h2>
+    1. 绝对路径</br>
+    2. 相对路径</br>
+    <hr></hr>
+    <!--<=========================>-->
+    <h2>无序列表（前面一个点做标志）</h2>
+    <ul type = >
+        <li>Today is Saturday</li>
+        <li>Tomorrow is Sunday</li>
+        <li>What's more,yestoday is Friday</li>
+    </ul>
+
+    <h4>Disc 项目符号列表：</h4>
+    <ul type="disc">
+        <li>苹果</li>
+        <li>香蕉</li>
+        <li>柠檬</li>
+        <li>桔子</li>
+    </ul>
+
+    <h4>Circle 项目符号列表：</h4>
+    <ul type="circle">
+        <li>苹果</li>
+        <li>香蕉</li>
+        <li>柠檬</li>
+        <li>桔子</li>
+    </ul>
+
+    <h4>Square 项目符号列表：</h4>
+    <ul type="square">
+        <li>苹果</li>
+        <li>香蕉</li>
+        <li>柠檬</li>
+        <li>桔子</li>
+    </ul>
+    <hr></hr>
+    <!--<=========================>-->
+    <h2>有序列表（前面有序标示做标志）</h2>
+    <h4>数字列表：</h4>
+    <ol start = "10">
+        <li>苹果</li>
+        <li>香蕉</li>
+        <li>柠檬</li>
+        <li>桔子</li>
+    </ol>
+
+    <h4>字母列表：</h4>
+    <ol type="A">
+        <li>苹果</li>
+        <li>香蕉</li>
+        <li>柠檬</li>
+        <li>桔子</li>
+    </ol>
+
+    <h4>小写字母列表：</h4>
+    <ol type="a">
+        <li>苹果</li>
+        <li>香蕉</li>
+        <li>柠檬</li>
+        <li>桔子</li>
+    </ol>
+
+    <h4>罗马字母列表：</h4>
+    <ol type="I">
+        <li>苹果</li>
+        <li>香蕉</li>
+        <li>柠檬</li>
+        <li>桔子</li>
+    </ol>
+
+    <h4>小写罗马字母列表：</h4>
+    <ol type="i">
+        <li>苹果</li>
+        <li>香蕉</li>
+        <li>柠檬</li>
+        <li>桔子</li>
+    </ol>
+    <hr></hr>
+    <!--<=========================>-->
+    <hr2>自定义列表-前面啥都没有</hr2>
+    <dl>
+        <dd>苹果</dd>
+        <dd>香蕉</dd>
+        <dd>橘子</dd>
+    </dl>
+    <hr></hr>
+    <!--<=========================>-->
+    <hr2>超链接</hr2>
+    <a href="http://www.baidu.com">进入百度</a>
+    <hr></hr>
+</body>
+</html>
+
+<!--<html>-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport"-->
+<!--          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
+<!--    <meta http-equiv="X-UA-Compatible" content="ie=edge">-->
+<!--    <title>Document</title>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--</body>-->
+<!--</html>-->

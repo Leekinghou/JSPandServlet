@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--提交的地址-->
+<!--提交方式：-->
+<!--get：加到链接里-->
+<!--post：封装到一个包里面-->
+<!--jsp和servlet处理-->
+<form action="接受数据地址.html" method = "post" enctype="multipart/form-data" name="registerform">
+    <!--隐藏控件-->
+    <input type = "hidden" name="id" value="100" />
+    <table>    <!--    username=xxxxx,password = xxxxx-->
+        <tr><td>账号</td><td><input type="text" name = "username" maxlength="6" placeholder="请输入账号"/></td></tr>
+        <tr><td>密码</td><td><input type="password" name = "password" minlength="8" placeholder = "请输入密码，最少8个字符"/></td></tr>
+        <!--设置同一个name即可单选 check即为默认选择-->
+        <tr><td>性别</td><td>男<input type="radio" name="sex" value="man" checked/>女<input type = "radio" name="sex" value="woman"/></td></tr>
+        <tr><td>年满18</td><td>是<input type="radio" name="morethan18" value="ture" checked/>否<input type = "radio" name="morethan18" value="false"/></td></tr>
+        <!--多选-->
+        <tr><td>爱好</td><td>读书<input type="checkbox" name="hobby" value="read" />写字<input type = "checkbox" name="hobby" value="write"/></td></tr>
+    <tr><td colspan="2" align="center"><input type = "button" value="普通按钮"/><input type="reset" name = "reset" /><input type="submit" name = "register" value="注册"/></td></tr>
+<!--        下拉列表-->
+        <td>生日</td><td>
+        <select name = "month">
+<!--            <option checked>——</option>-->
+            <option value="1">1月</option>
+            <option value="2">2月</option>
+            <option>3月</option>
+            <option>4月</option>
+            <option>5月</option>
+            <option>6月</option>
+            <option>7月</option>
+            <option>8月</option>
+            <option>9月</option>
+            <option>10月</option>
+            <option>11月</option>
+            <option>12月</option>
+        </select>
+            <select name="day">
+<!--                <option checked>——</option>-->
+<!--                selected为默认-->
+                <option selected>1日</option>
+                <option>2日</option>
+                <option>3日</option>
+                <option>4日</option>
+                <option>5日</option>
+                <option>6日</option>
+                <option>7日</option>
+                <option>8日</option>
+                <option>9日</option>
+                <option>10日</option>
+                <option>11日</option>
+                <option>12日</option>
+
+            </select>
+<!--            长文本框-->
+        <tr><td>交友宣言</td><td><textarea rows="10" cols="100" name = "message" placeholder="请说一下你的交友理由！"></textarea></td></tr>
+        </td>
+<!--文件上传-->
+        <tr><td>文件上传</td><td><input type="file"/></td></tr>
+        <!--图片作为按钮-->
+        <tr><td colspan="2" align="center"><input type = "image" src = "../picture/07.jpg"/></td></tr>
+
+
+    </table>
+
+</form>
+</body>
+</html>
